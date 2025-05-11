@@ -9,8 +9,7 @@ test('Upload Single File', async ({ page }) => {
     //submit btn
     await page.click('#file-submit');
 
-
-    await page.waitForTimeout(3000);
+    await page.waitForSelector(3000);
 
 
     //validation: Assert upload success
