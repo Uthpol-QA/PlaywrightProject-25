@@ -1,0 +1,64 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="14.561904">
+<testsuite name="Reporter.spec.js" timestamp="2025-05-18T02:40:02.790Z" hostname="chromium" tests="3" failures="1" skipped="0" time="10.589" errors="0">
+<testcase name="Test1" classname="Reporter.spec.js" time="1.367">
+</testcase>
+<testcase name="Test2" classname="Reporter.spec.js" time="6.29">
+<failure message="Reporter.spec.js:10:1 Test2" type="FAILURE">
+<![CDATA[  [chromium] › Reporter.spec.js:10:1 › Test2 ───────────────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveTitle(expected)
+
+    Locator: locator(':root')
+    Expected string: "OrangeHRM12345"
+    Received string: "OrangeHRM"
+    Call log:
+      - expect.toHaveTitle with timeout 5000ms
+      - waiting for locator(':root')
+        9 × locator resolved to <html>…</html>
+          - unexpected value "OrangeHRM"
+
+
+      11 |
+      12 |     await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+    > 13 |     await expect(page).toHaveTitle("OrangeHRM12345")  //intentional fail
+         |                        ^
+      14 |
+      15 | })
+      16 |
+        at C:\Users\POL\VS Code\Playwright Repo\PlaywrightProject-25\tests\Reporter.spec.js:13:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\Reporter-Test2-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\Reporter-Test2-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Reporter-Test2-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\Reporter-Test2-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\Reporter-Test2-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\Reporter-Test2-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\Reporter-Test2-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\Reporter-Test2-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\Reporter-Test2-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test3" classname="Reporter.spec.js" time="2.932">
+</testcase>
+</testsuite>
+</testsuites>
